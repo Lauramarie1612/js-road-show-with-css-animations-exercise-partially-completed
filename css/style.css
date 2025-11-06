@@ -130,7 +130,7 @@
   bottom: 2.8vh;
   width: var(--car-w);
   max-width: 28vw;
-  z-index: 1;
+  z-index: 2;
   left: calc(-1 * var(--off-car1));
   animation: car1 18s linear infinite;
 }
@@ -150,7 +150,7 @@
   bottom: 2.8vh;
   width: var(--car-w);
   max-width: 28vw;
-  z-index: 1;
+  z-index: 2;
   right: calc(-1 * var(--off-car2));
   will-change: transform;
   animation: car2 12s linear infinite;
@@ -172,7 +172,7 @@
   bottom: -3.4vh;
   width: var(--car-w);
   max-width: 28vw;
-  z-index: 1;
+  z-index: 2;
   left: calc(-1 * var(--off-car3));
   will-change: transform;
   animation: car3 8s linear infinite;
@@ -189,20 +189,19 @@
 
 .car4 {
   position: absolute;
-  bottom: -3.4vh;
+  bottom: 2.8vh;
   width: var(--car-w);
-  max-width: 280px;
+  max-width: 28vw;
   z-index: 1;
-  left: calc(-1 * var(--off-car4));
-  will-change: transform;
-  animation: car4 20s linear infinite;
+  left: calc(-1 * var(--off-car1));
+  animation: car4 10s linear infinite;
 }
 @keyframes car4 {
   0% {
-    transform: translateX(0);
+    transform: translateX(0) rotateY(180deg);
   }
   90%,
   100% {
-    transform: translateX(calc(100vw + var(--off-car4)));
+    transform: translateX(calc(100vw + var(--off-car1))) rotateY(180deg);
   }
 }
