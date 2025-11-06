@@ -5,6 +5,7 @@
 const getRedcar = document.getElementById("redCar");
 const getPolicecar = document.getElementById("policeCar");
 const getBluecar = document.getElementById("blueCar");
+const getCar4 = document.getElementById("car4");
 
 const sun = document.querySelector(".sun");
 const scene = document.querySelector(".scene");

@@ -186,3 +186,23 @@
     transform: translateX(calc(100vw + var(--off-car3))) rotateY(180deg);
   }
 }
+
+.car4 {
+  position: absolute;
+  bottom: -3.4vh;
+  width: var(--car-w);
+  max-width: 280px;
+  z-index: 1;
+  left: calc(-1 * var(--off-car4));
+  will-change: transform;
+  animation: car4 20s linear infinite;
+}
+@keyframes car4 {
+  0% {
+    transform: translateX(0);
+  }
+  90%,
+  100% {
+    transform: translateX(calc(100vw + var(--off-car4)));
+  }
+}
